@@ -7,13 +7,13 @@ import lombok.Setter;
 @Setter
 public class BookDto {
     private int bookid;
-    private String bookname;
+    private String bookName;
     private String publisher;
     int price;
 
-    public BookDto(int bookid, String bookname, String publisher, int price) {
+    public BookDto(int bookid, String bookName, String publisher, int price) {
         this.bookid = bookid;
-        this.bookname = bookname;
+        this.bookName = bookName;
         this.publisher = publisher;
         this.price = price;
     }
