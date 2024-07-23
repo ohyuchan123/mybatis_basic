@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.AddressMapper">
+    <select id="getAddressesByMemberId" resultType="Address">
+        SELECT * FROM address WHERE member_id = #{memberId}
+    </select>
+
+    <insert id="insertAddress" parameterType="Address" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO address (member_id, address_type, street, city, country)
+        VALUES (#{memberId}, #{addressType}, #{street}, #{city}, #{country})
+    </insert>
+
+    <update id="updateAddress" parameterType="Address">
+        UPDATE address
+        SET address_type = #{addressType}, street = #{street}, city = #{city}, country = #{country}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteAddress" parameterType="int">
+        DELETE FROM address WHERE id = #{id}
+    </delete>
+</mapper>
