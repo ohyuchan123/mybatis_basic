@@ -1,4 +1,4 @@
-package mybatis.dto;
+package mybatis.Example.dto;
 
 import lombok.Getter;
 import lombok.Setter;

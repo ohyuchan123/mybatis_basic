@@ -1,6 +1,6 @@
-package mybatis.dao;
+package mybatis.Example.dao;
 
-import mybatis.dto.BookDto;
+import mybatis.Example.dto.BookDto;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;

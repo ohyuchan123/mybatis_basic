@@ -20,7 +20,7 @@
             <mapper resource="mapper/book-mapper.xml"/>
          -->
 
-        <mapper class="mybatis.dao.BookDao"/>
+        <mapper class="mybatis.Example.dao.BookDao"/>
     </mappers>
 
 </configuration>

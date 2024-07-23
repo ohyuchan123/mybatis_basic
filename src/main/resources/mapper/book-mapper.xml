@@ -2,24 +2,24 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mybatis.dao.BookDao">
-    <select id="listBook" resultType="mybatis.dto.BookDto">
+<mapper namespace="mybatis.Example.dao.BookDao">
+    <select id="listBook" resultType="mybatis.Example.dto.BookDto">
         select bookid, bookname as bookName, publisher, price
         from book;
     </select>
 
-    <select id="detailBook" resultType="mybatis.dto.BookDto">
+    <select id="detailBook" resultType="mybatis.Example.dto.BookDto">
         select bookid, bookname as bookName, publisher, price
         from book
         where bookid = #{bookid};
     </select>
 
-    <insert id="insertBook" parameterType="mybatis.dto.BookDto">
+    <insert id="insertBook" parameterType="mybatis.Example.dto.BookDto">
         insert into book (bookid, bookname, publisher, price)
         values (#{bookid}, #{bookName}, #{publisher}, #{price})
     </insert>
 
-    <update id="updateBook" parameterType="mybatis.dto.BookDto">
+    <update id="updateBook" parameterType="mybatis.Example.dto.BookDto">
         update book
         set bookName = #{bookName},
             publisher = #{publisher},

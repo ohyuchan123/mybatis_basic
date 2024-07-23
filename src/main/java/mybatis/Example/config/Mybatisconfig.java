@@ -1,6 +1,6 @@
-package mybatis.config;
+package mybatis.Example.config;
 
-import mybatis.dao.BookDao;
+import mybatis.Example.dao.BookDao;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;

@@ -1,16 +1,11 @@
-package mybatis;
+package mybatis.Example;
 
-import mybatis.config.Mybatisconfig;
-import mybatis.dao.BookDao;
-import mybatis.dto.BookDto;
-import org.apache.ibatis.io.Resources;
+import mybatis.Example.config.Mybatisconfig;
+import mybatis.Example.dao.BookDao;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
-import java.io.Reader;
-import java.util.List;
 
 // config : xml
 public class Main {
