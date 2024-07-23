@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface BookDao {
     List<BookDto> listBook();
-    BookDto getBookById(int bookid);
+    BookDto detailBook(int bookid);
     int insertBook(BookDto bookDto);
     int updateBook(BookDto bookDto);
-    int deleteBook(BookDto bookDto);
+    int deleteBook(int bookid);
 }
