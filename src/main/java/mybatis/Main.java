@@ -15,7 +15,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         // Mybatis 설정 파일을 읽어 온다.
-        Reader reader = Resources.getResourceAsReader("config/mybatis-config.xml");
+        Reader reader = Resources.getResourceAsReader("config/mybatis-config-2.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
@@ -38,20 +38,20 @@ public class Main {
 //        }
 
         // 등록
-//        {
-//            BookDto bookDto = new BookDto(11, "11번째 책", "uplus press", 5000);
-//            int ret = bookDao.insertBook(bookDto);
-//            System.out.println(ret);
-//            sqlSession.commit();
-//        }
-
-        // 수정
         {
-            BookDto bookDto = new BookDto(11,"11번째 책 수정","uplus press", 7000);
-            int ret = bookDao.updateBook(bookDto);
+            BookDto bookDto = new BookDto(11, "11번째 책", "uplus press", 5000);
+            int ret = bookDao.insertBook(bookDto);
             System.out.println(ret);
             sqlSession.commit();
         }
+
+        // 수정
+//        {
+//            BookDto bookDto = new BookDto(11,"11번째 책 수정","uplus press", 7000);
+//            int ret = bookDao.updateBook(bookDto);
+//            System.out.println(ret);
+//            sqlSession.commit();
+//        }
 
 
         //삭제
