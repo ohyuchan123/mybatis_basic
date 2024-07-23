@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+## 파일 설정
+./src/main/resources/config/mybatis-config.xml
