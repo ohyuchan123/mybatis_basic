@@ -1,7 +1,6 @@
 package mybatis.MemberShip.mapper;
 
 import mybatis.MemberShip.model.Address;
-import mybatis.MemberShip.model.Member;
 
 import java.util.List;
 
